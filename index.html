@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kumar Kunal — Technical Architect | Core Banking & Islamic Banking | GCC</title>
+<meta name="description" content="Kumar Kunal — Technical Architect & Solution Architect with 18+ years in core banking, Islamic banking, and digital banking across the GCC. Java, Spring Boot, Microservices, SOA/ESB middleware, payments and integration.">
+<meta name="keywords" content="Technical Architect, Solution Architect, Core Banking, Islamic Banking, Digital Banking, Middleware, SOA, ESB, Java, Spring Boot, Microservices, SWIFT, Payments, Fintech, Bahrain, GCC, Kumar Kunal, PMP, PMI-ACP, Generative AI, Agentic AI, Spring AI, LLM">
+<meta name="author" content="Kumar Kunal">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Kumar Kunal — Technical Architect | Core Banking & Islamic Banking">
+<meta property="og:description" content="18+ years architecting core banking, Islamic banking, and digital banking systems across the GCC and MENA region.">
+<meta property="og:locale" content="en_US">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kumar Kunal",
+  "jobTitle": "Technical Architect | Solution Architect",
+  "description": "Technical Architect with 18+ years in core banking, Islamic banking, and digital banking across the GCC.",
+  "email": "kkunal2005@gmail.com",
+  "telephone": "+973-3714-6612",
+  "address": { "@type": "PostalAddress", "addressLocality": "Manama", "addressCountry": "Bahrain" },
+  "knowsAbout": ["Core Banking","Islamic Banking","Digital Banking","Middleware","SOA","ESB","Java","Spring Boot","Microservices","SWIFT","Payments","Cloud Architecture","Generative AI","Agentic AI","Spring AI"],
+  "sameAs": ["https://github.com/kkunal20026"]
+}
+</script>
+
+<style>
+:root{
+  --ink:#0B1929;          /* deep banking navy */
+  --ink-2:#10233A;        /* lighter panel navy */
+  --ink-3:#16314f;        /* hover/border navy */
+  --teal:#34B3C4;         /* technical teal */
+  --teal-deep:#1E7E8C;
+  --gold:#C8A24A;         /* restrained GCC finance gold */
+  --paper:#F6F8FA;        /* light section bg */
+  --paper-2:#ECF0F4;
+  --slate:#5A6B7B;        /* muted text */
+  --slate-light:#94A5B4;
+  --line:rgba(255,255,255,.09);
+  --line-dark:rgba(11,25,41,.10);
+  --maxw:1140px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  background:var(--ink);
+  color:#DCE6EF;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Sora',sans-serif;line-height:1.12;font-weight:700}
+a{color:inherit;text-decoration:none}
+.mono{font-family:'JetBrains Mono',monospace}
+
+/* ---------- layout ---------- */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+section{position:relative}
+.eyebrow{
+  font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.32em;
+  text-transform:uppercase;color:var(--teal);margin-bottom:18px;display:flex;align-items:center;gap:12px;
+}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--teal);display:inline-block}
+
+/* ---------- nav ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  background:rgba(11,25,41,.72);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);transition:transform .3s;
+}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:'Sora';font-weight:700;font-size:1.05rem;letter-spacing:.01em}
+.brand span{color:var(--teal)}
+.navlinks{display:flex;gap:34px;font-size:.86rem;font-weight:500}
+.navlinks a{color:var(--slate-light);transition:color .2s;position:relative}
+.navlinks a:hover,.navlinks a:focus{color:#fff}
+.nav-cta{
+  font-family:'JetBrains Mono',monospace;font-size:.78rem;border:1px solid var(--teal);
+  color:var(--teal);padding:8px 16px;border-radius:2px;transition:all .25s;
+}
+.nav-cta:hover,.nav-cta:focus{background:var(--teal);color:var(--ink)}
+@media(max-width:760px){.navlinks{display:none}}
+
+/* ---------- hero ---------- */
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden}
+#netcanvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.hero::after{ /* vignette so text stays legible */
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 30% 50%, transparent 0%, rgba(11,25,41,.55) 70%, var(--ink) 100%);
+  pointer-events:none;
+}
+.hero .wrap{position:relative;z-index:2}
+.hero-status{
+  font-family:'JetBrains Mono';font-size:.74rem;color:var(--teal);letter-spacing:.12em;
+  display:inline-flex;align-items:center;gap:9px;margin-bottom:26px;
+  border:1px solid var(--line);padding:7px 14px;border-radius:40px;background:rgba(52,179,196,.06);
+}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 0 rgba(52,179,196,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,179,196,.5)}70%{box-shadow:0 0 0 9px rgba(52,179,196,0)}100%{box-shadow:0 0 0 0 rgba(52,179,196,0)}}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);font-weight:800;letter-spacing:-.02em;color:#fff}
+.hero h1 .accent{
+  background:linear-gradient(120deg,var(--teal),var(--gold));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero-role{
+  font-family:'Sora';font-weight:500;font-size:clamp(1.05rem,2.4vw,1.5rem);
+  color:#AFC0CF;margin-top:20px;letter-spacing:.005em;
+}
+.hero-thesis{max-width:640px;margin-top:24px;color:#9DB0C0;font-size:1.05rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.btn{
+  font-family:'JetBrains Mono';font-size:.84rem;font-weight:500;padding:14px 24px;border-radius:3px;
+  transition:all .25s;display:inline-flex;align-items:center;gap:9px;cursor:pointer;
+}
+.btn-primary{background:var(--teal);color:var(--ink);font-weight:700}
+.btn-primary:hover,.btn-primary:focus{background:#fff;transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);color:#CDD9E4}
+.btn-ghost:hover,.btn-ghost:focus{border-color:var(--teal);color:#fff}
+.hero-loc{margin-top:34px;font-family:'JetBrains Mono';font-size:.78rem;color:var(--slate-light);letter-spacing:.06em}
+
+/* ---------- metrics band ---------- */
+.metrics{background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.metrics .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.metric{padding:42px 28px;border-right:1px solid var(--line);position:relative}
+.metric:last-child{border-right:none}
+.metric .num{font-family:'Sora';font-weight:800;font-size:clamp(1.9rem,4vw,2.9rem);color:#fff;letter-spacing:-.02em}
+.metric .num .u{color:var(--gold)}
+.metric .lbl{font-family:'JetBrains Mono';font-size:.72rem;color:var(--slate-light);text-transform:uppercase;letter-spacing:.13em;margin-top:8px}
+@media(max-width:860px){.metrics .grid{grid-template-columns:repeat(2,1fr)}.metric:nth-child(2){border-right:none}.metric:nth-child(1),.metric:nth-child(2){border-bottom:1px solid var(--line)}}
+
+/* ---------- generic section ---------- */
+.sec{padding:104px 0}
+.sec-head{margin-bottom:54px;max-width:720px}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.7rem);color:#fff;letter-spacing:-.015em}
+.sec-head p{color:var(--slate-light);margin-top:18px;font-size:1.05rem}
+
+/* about */
+.about{background:var(--paper);color:#1B2B3A}
+.about .eyebrow{color:var(--teal-deep)}
+.about .eyebrow::before{background:var(--teal-deep)}
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:64px;align-items:start}
+.about h2{color:#0B1929}
+.about-lead{font-family:'Sora';font-weight:400;font-size:clamp(1.25rem,2.6vw,1.7rem);line-height:1.4;color:#13283f;letter-spacing:-.01em}
+.about-body{color:#42566a;margin-top:24px;font-size:1.02rem}
+.about-body p+p{margin-top:16px}
+.about-card{background:#fff;border:1px solid var(--line-dark);border-radius:6px;padding:32px;box-shadow:0 14px 40px -24px rgba(11,25,41,.35)}
+.about-card h4{font-size:.78rem;font-family:'JetBrains Mono';text-transform:uppercase;letter-spacing:.14em;color:var(--teal-deep);margin-bottom:18px}
+.about-card ul{list-style:none}
+.about-card li{display:flex;gap:11px;padding:9px 0;border-bottom:1px solid var(--paper-2);font-size:.92rem;color:#2c3e50}
+.about-card li:last-child{border-bottom:none}
+.about-card li::before{content:"▸";color:var(--gold);font-size:.8rem}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px}}
+
+/* expertise */
+.exp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.dom{
+  background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:30px 30px 32px;
+  transition:transform .3s,border-color .3s;position:relative;overflow:hidden;
+}
+.dom::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--teal),var(--teal-deep));transform:scaleY(0);transform-origin:top;transition:transform .35s}
+.dom:hover{transform:translateY(-4px);border-color:var(--ink-3)}
+.dom:hover::before{transform:scaleY(1)}
+.dom .k{font-family:'JetBrains Mono';font-size:.72rem;color:var(--gold);letter-spacing:.1em}
+.dom h3{font-size:1.18rem;color:#fff;margin:10px 0 16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-family:'JetBrains Mono';font-size:.74rem;color:#B6C6D4;background:rgba(255,255,255,.04);border:1px solid var(--line);padding:6px 11px;border-radius:3px}
+@media(max-width:760px){.exp-grid{grid-template-columns:1fr}}
+
+/* experience timeline */
+.work{background:var(--paper);color:#1B2B3A}
+.work .eyebrow{color:var(--teal-deep)}.work .eyebrow::before{background:var(--teal-deep)}
+.work h2{color:#0B1929}
+.tl{position:relative;margin-top:10px}
+.tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--teal),var(--paper-2))}
+.job{position:relative;padding:0 0 38px 44px}
+.job::before{content:"";position:absolute;left:3px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--paper);border:2px solid var(--teal)}
+.job.cur::before{background:var(--teal);box-shadow:0 0 0 4px rgba(52,179,196,.18)}
+.job .when{font-family:'JetBrains Mono';font-size:.74rem;color:var(--teal-deep);letter-spacing:.05em}
+.job h3{font-size:1.16rem;color:#0B1929;margin:5px 0 2px}
+.job .co{font-size:.95rem;color:#42566a;font-weight:500}
+.job .co .client{color:var(--gold);font-weight:600}
+.job p{font-size:.95rem;color:#46596c;margin-top:10px;max-width:760px}
+.badge{display:inline-block;font-family:'JetBrains Mono';font-size:.68rem;background:rgba(200,162,74,.14);color:#9a7a26;border:1px solid rgba(200,162,74,.4);padding:3px 9px;border-radius:30px;margin-top:10px;letter-spacing:.04em}
+
+/* projects */
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{
+  background:var(--ink-2);border:1px solid var(--line);border-radius:8px;padding:32px;
+  transition:transform .3s,border-color .3s;display:flex;flex-direction:column;
+}
+.card:hover,.card:focus-within{transform:translateY(-5px);border-color:var(--teal-deep)}
+.card .ctop{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px}
+.card .lang{font-family:'JetBrains Mono';font-size:.72rem;color:var(--ink);background:var(--teal);padding:5px 11px;border-radius:3px;font-weight:700}
+.card h3{color:#fff;font-size:1.22rem;margin-bottom:12px}
+.card p{color:#9DB0C0;font-size:.94rem;flex:1}
+.card .repo{margin-top:20px;font-family:'JetBrains Mono';font-size:.8rem;color:var(--teal);display:inline-flex;align-items:center;gap:8px;transition:gap .2s}
+.card .repo:hover,.card .repo:focus{gap:13px}
+@media(max-width:760px){.proj-grid{grid-template-columns:1fr}}
+
+/* certs */
+.cert-row{display:flex;gap:22px;flex-wrap:wrap}
+.cert{flex:1;min-width:240px;background:var(--ink-2);border:1px solid var(--line);border-radius:6px;padding:26px;display:flex;gap:18px;align-items:center}
+.cert .ic{font-family:'Sora';font-weight:800;font-size:1.05rem;color:var(--ink);background:var(--gold);width:52px;height:52px;border-radius:8px;display:grid;place-items:center;flex-shrink:0}
+.cert h4{color:#fff;font-size:1rem}
+.cert span{font-size:.85rem;color:var(--slate-light)}
+
+/* contact */
+.contact{background:linear-gradient(160deg,var(--ink-2),var(--ink));border-top:1px solid var(--line);text-align:center;padding:110px 0}
+.contact h2{font-size:clamp(2rem,5vw,3.4rem);color:#fff;letter-spacing:-.02em;max-width:760px;margin:0 auto}
+.contact h2 .accent{background:linear-gradient(120deg,var(--teal),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.contact p{color:var(--slate-light);margin:20px auto 38px;max-width:520px}
+.contact-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--ink);border-top:1px solid var(--line);padding:30px 0;text-align:center}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+footer p{font-family:'JetBrains Mono';font-size:.76rem;color:var(--slate)}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand">Kumar<span>.</span>Kunal</a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#work">Experience</a>
+      <a href="#projects">Projects</a>
+    </div>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <canvas id="netcanvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-status"><span class="dot"></span> Available for senior architecture roles · GCC / MENA</div>
+    <h1>Architecting the<br>systems banks <span class="accent">run on.</span></h1>
+    <p class="hero-role">Technical Architect &nbsp;·&nbsp; Solution Architect &nbsp;·&nbsp; Banking &amp; Fintech</p>
+    <p class="hero-thesis">18+ years turning complex banking challenges into scalable, secure platforms — core banking, Islamic banking, payments, and the middleware that connects them all.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Start a conversation →</a>
+      <a href="https://github.com/kkunal20026" target="_blank" rel="noopener" class="btn btn-ghost">View GitHub ↗</a>
+    </div>
+    <p class="hero-loc">📍 Manama, Bahrain &nbsp;·&nbsp; PMP® &nbsp;·&nbsp; PMI-ACP®</p>
+  </div>
+</header>
+
+<!-- METRICS -->
+<section class="metrics">
+  <div class="wrap">
+    <div class="grid">
+      <div class="metric"><div class="num">18<span class="u">+</span></div><div class="lbl">Years in banking tech</div></div>
+      <div class="metric"><div class="num"><span class="u">$</span>50M<span class="u">+</span></div><div class="lbl">Monthly txns architected</div></div>
+      <div class="metric"><div class="num"><span class="u">$</span>100M<span class="u">+</span></div><div class="lbl">Digital lending platform</div></div>
+      <div class="metric"><div class="num">99.9<span class="u">%</span></div><div class="lbl">Production uptime</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="eyebrow">Profile</div>
+        <h2 style="margin-bottom:28px">Banking systems, end to end.</h2>
+        <p class="about-lead">I design the architecture behind core banking, Islamic banking, and digital banking platforms — and the middleware that ties them together.</p>
+        <div class="about-body">
+          <p>My work sits at the integration layer of finance: connecting core banking engines to digital channels, payment networks, and fintech providers through SOA/ESB middleware, SWIFT and ISO 20022 messaging, and secure APIs.</p>
+          <p>Across the GCC and MENA region — Bahrain, Kuwait, UAE, Egypt, and the UK — I've delivered electronic trading integrations, payment gateways, AML screening, and digital lending platforms for tier-one financial institutions. I currently architect banking solutions for Kuwait Finance House through ITS, the KFH Group technology company.</p>
+          <p>I hold both PMP® and PMI-ACP® certifications, and I'm equally comfortable at a whiteboard with executives or deep in production code resolving the hardest cross-system issues.</p>
+        </div>
+      </div>
+      <aside class="about-card">
+        <h4>At a glance</h4>
+        <ul>
+          <li>Core &amp; Islamic (Sharia-compliant) banking</li>
+          <li>Middleware, SOA / ESB, API integration</li>
+          <li>Java, Spring Boot, Microservices</li>
+          <li>SWIFT, ISO 20022, IBM MQ, Kafka</li>
+          <li>Cloud-native: AWS, Azure, Kubernetes</li>
+          <li>PCI DSS &amp; ISO 27001 compliance</li>
+          <li>Builds agentic AI with Spring AI and LLMs</li>
+          <li>Recognized by KFH Deputy Group CEO</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="sec" id="expertise">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Capabilities</div>
+      <h2>Areas of expertise</h2>
+      <p>Deep banking domain knowledge paired with hands-on architecture across the modern enterprise stack.</p>
+    </div>
+    <div class="exp-grid">
+      <div class="dom">
+        <div class="k">01 / DOMAIN</div>
+        <h3>Banking &amp; Payments</h3>
+        <div class="tags">
+          <span class="tag">Core Banking</span><span class="tag">Islamic Banking</span><span class="tag">Digital Banking</span>
+          <span class="tag">Open Banking</span><span class="tag">Payments</span><span class="tag">Electronic Trading</span><span class="tag">AML Screening</span>
+        </div>
+      </div>
+      <div class="dom">
+        <div class="k">02 / INTEGRATION</div>
+        <h3>Middleware &amp; Messaging</h3>
+        <div class="tags">
+          <span class="tag">SOA</span><span class="tag">ESB</span><span class="tag">IBM MQ</span><span class="tag">Kafka</span>
+          <span class="tag">RabbitMQ</span><span class="tag">SWIFT</span><span class="tag">ISO 20022</span><span class="tag">REST / SOAP</span>
+        </div>
+      </div>
+      <div class="dom">
+        <div class="k">03 / ENGINEERING</div>
+        <h3>Languages &amp; Frameworks</h3>
+        <div class="tags">
+          <span class="tag">Java 8/17/21</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span>
+          <span class="tag">Hibernate / JPA</span><span class="tag">React / Angular</span>
+        </div>
+      </div>
+      <div class="dom">
+        <div class="k">04 / PLATFORM</div>
+        <h3>Cloud, DevOps &amp; Data</h3>
+        <div class="tags">
+          <span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">Kubernetes</span><span class="tag">Docker</span>
+          <span class="tag">CI/CD</span><span class="tag">Oracle</span><span class="tag">MS SQL Server</span><span class="tag">ELK Stack</span>
+        </div>
+      </div>
+      <div class="dom">
+        <div class="k">05 / SECURITY</div>
+        <h3>Security &amp; Compliance</h3>
+        <div class="tags">
+          <span class="tag">OAuth2</span><span class="tag">JWT</span><span class="tag">SAML</span><span class="tag">PCI DSS</span>
+          <span class="tag">ISO 27001</span><span class="tag">AES-256</span>
+        </div>
+      </div>
+      <div class="dom">
+        <div class="k">06 / LEADERSHIP</div>
+        <h3>Architecture &amp; Delivery</h3>
+        <div class="tags">
+          <span class="tag">Enterprise Architecture</span><span class="tag">Solution Design</span><span class="tag">Agile / SCRUM</span>
+          <span class="tag">Team Mentorship</span><span class="tag">PMP®</span><span class="tag">PMI-ACP®</span><span class="tag">Spring AI</span><span class="tag">Agentic AI</span><span class="tag">LLM Integration</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="sec work" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Track record</div>
+      <h2>Experience</h2>
+      <p>Selected roles delivering banking technology for leading GCC and global institutions.</p>
+    </div>
+    <div class="tl">
+      <div class="job cur">
+        <div class="when">MAY 2026 — PRESENT · BAHRAIN</div>
+        <h3>Technical Architect | Solution Architect</h3>
+        <div class="co">ITS (International Turnkey Systems) – KFH Group &nbsp;·&nbsp; <span class="client">Client: Kuwait Finance House</span></div>
+        <p>Architecting core banking, Islamic banking, and digital banking solutions for KFH as part of the KFH Group technology company — continuing 5+ years of delivery following absorption from D4 Insight.</p>
+      </div>
+      <div class="job">
+        <div class="when">MAR 2021 — APR 2026 · BAHRAIN</div>
+        <h3>Technical Architect | Solution Architect</h3>
+        <div class="co">D4 Insight &nbsp;·&nbsp; <span class="client">Client: Kuwait Finance House</span></div>
+        <p>Architected core banking middleware and digital banking integrations for KFH — designing SOA/ESB solutions for high-volume Sharia-compliant transactions, electronic trading (Refinitiv), and PSP integrations across six entities. Reduced operational costs 20% while ensuring 99.9% uptime.</p>
+        <span class="badge">★ Recognized by KFH Deputy Group CEO</span>
+      </div>
+      <div class="job">
+        <div class="when">JUN 2020 — DEC 2020 · UAE</div>
+        <h3>Lead Software Engineer | System Architect</h3>
+        <div class="co">SALT IT Solution System &nbsp;·&nbsp; <span class="client">Client: Qatar Development Bank</span></div>
+        <p>Architected a $100M+ digital lending platform for SME financing using Java 11, Spring Boot, PostgreSQL, and Kafka — designing the cloud-native core banking microservices from the ground up. 99.9% uptime, 75% downtime reduction.</p>
+      </div>
+      <div class="job">
+        <div class="when">OCT 2019 — MAY 2020 · UAE</div>
+        <h3>Senior Software Engineer</h3>
+        <div class="co">TEKNIP &nbsp;·&nbsp; <span class="client">Client: First Abu Dhabi Bank</span></div>
+        <p>Built Payit digital wallet microservices and 3 critical payment APIs processing $50M+ monthly transactions, with FIS Payment Hub AML integration achieving 99.9% screening accuracy.</p>
+      </div>
+      <div class="job">
+        <div class="when">NOV 2017 — OCT 2019 · UAE</div>
+        <h3>System Architect</h3>
+        <div class="co">Servion Global Solutions &nbsp;·&nbsp; <span class="client">Client: Emirates NBD &amp; Emirates Islamic Bank</span></div>
+        <p>Architected core banking microservices and digital banking APIs enabling digital transformation, with event-driven integration and FIS Open Banking. Reduced query response times 40%.</p>
+        <span class="badge">★ Certificate of Appreciation · SPOT GEM Award</span>
+      </div>
+      <div class="job">
+        <div class="when">2007 — 2017 · INDIA / NIGERIA</div>
+        <h3>Earlier roles — Tech Mahindra, VANSO, Accenture, Capgemini, IDBI Intech</h3>
+        <div class="co">Banking &amp; telecom delivery across India and Nigeria</div>
+        <p>Delivered Finacle e-Banking migrations, mobile banking platforms, and enterprise integrations for IDBI Bank, FCMB, GT Bank, National Australia Bank and others — earning the Group Award in Excellence and the Pat on the Back award.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="sec" id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Open source</div>
+      <h2>Featured projects</h2>
+      <p>Hands-on builds in agentic AI and banking API design, public on GitHub.</p>
+    </div>
+    <div class="proj-grid">
+      <div class="card">
+        <div class="ctop"><h3 style="margin:0">CodeGuardian AI</h3><span class="lang">Spring AI</span></div>
+        <p>An agentic code-health engineer on Java 25, Spring Boot 4.1 and Spring AI 2.0. It reads CI results and SonarQube findings, ranks issues, has an LLM write fixes, checks each fix against risk rules, then opens a GitHub PR, asks a human to approve, or raises a Jira ticket. Every decision goes to a hash-chained audit trail in SQL Server.</p>
+        <a class="repo" href="https://github.com/kkunal20026/codeguardian-ai" target="_blank" rel="noopener">View repository →</a>
+      </div>
+      <div class="card">
+        <div class="ctop"><h3 style="margin:0">Stock API Application</h3><span class="lang">Java 21</span></div>
+        <p>Production-grade stock trading API platform on Java 21 and Spring Boot 4.0.5 with JPA, MySQL, and Docker. RESTful APIs for portfolio management, real-time stock data, and order processing with unit and integration tests.</p>
+        <a class="repo" href="https://github.com/kkunal20026/kumar-kunal-stock-api-application-main" target="_blank" rel="noopener">View repository →</a>
+      </div>
+    </div>
+
+    <div class="sec-head" style="margin-top:80px;margin-bottom:30px">
+      <div class="eyebrow">Credentials</div>
+      <h2 style="font-size:clamp(1.5rem,3.4vw,2.1rem)">Certifications</h2>
+    </div>
+    <div class="cert-row">
+      <div class="cert"><div class="ic">PMP</div><div><h4>Project Management Professional</h4><span>Project Management Institute (PMI)</span></div></div>
+      <div class="cert"><div class="ic">ACP</div><div><h4>PMI Agile Certified Practitioner</h4><span>Project Management Institute (PMI)</span></div></div>
+      <div class="cert"><div class="ic">AI</div><div><h4>GenerativeAI &amp; Prompt Engineering</h4><span>EduHubSpot · June 2026</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center">Let's talk</div>
+    <h2>Building something in <span class="accent">banking or fintech?</span></h2>
+    <p>Open to senior architecture and technical leadership roles across the GCC and MENA region. Let's connect.</p>
+    <div class="contact-links">
+      <a href="mailto:kkunal2005@gmail.com" class="btn btn-primary">✉ kkunal2005@gmail.com</a>
+      <a href="tel:+97337146612" class="btn btn-ghost">📞 +973 3714 6612</a>
+      <a href="https://github.com/kkunal20026" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Kumar Kunal</p>
+    <p>Technical Architect · Manama, Bahrain</p>
+  </div>
+</footer>
+
+<script>
+// Integration-network signature: nodes + connecting lines (reflects middleware/integration work)
+(function(){
+  const c = document.getElementById('netcanvas');
+  if(!c) return;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const ctx = c.getContext('2d');
+  let w,h,nodes,raf;
+  const COUNT = 46;
+  function size(){
+    w = c.width = c.offsetWidth * devicePixelRatio;
+    h = c.height = c.offsetHeight * devicePixelRatio;
+  }
+  function init(){
+    size();
+    nodes = Array.from({length:COUNT},()=>({
+      x:Math.random()*w, y:Math.random()*h,
+      vx:(Math.random()-.5)*0.18*devicePixelRatio,
+      vy:(Math.random()-.5)*0.18*devicePixelRatio,
+      r:(Math.random()*1.6+0.8)*devicePixelRatio
+    }));
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    const linkDist = 150*devicePixelRatio;
+    for(let i=0;i<nodes.length;i++){
+      const n=nodes[i];
+      n.x+=n.vx; n.y+=n.vy;
+      if(n.x<0||n.x>w)n.vx*=-1;
+      if(n.y<0||n.y>h)n.vy*=-1;
+      for(let j=i+1;j<nodes.length;j++){
+        const m=nodes[j], dx=n.x-m.x, dy=n.y-m.y, d=Math.hypot(dx,dy);
+        if(d<linkDist){
+          const a=(1-d/linkDist)*0.5;
+          ctx.strokeStyle='rgba(52,179,196,'+a+')';
+          ctx.lineWidth=0.6*devicePixelRatio;
+          ctx.beginPath();ctx.moveTo(n.x,n.y);ctx.lineTo(m.x,m.y);ctx.stroke();
+        }
+      }
+      ctx.fillStyle='rgba(120,200,212,0.9)';
+      ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,Math.PI*2);ctx.fill();
+    }
+    raf=requestAnimationFrame(draw);
+  }
+  init();
+  if(!reduce){ draw(); } else { draw(); cancelAnimationFrame(raf); } // single static frame if reduced
+  window.addEventListener('resize',()=>{cancelAnimationFrame(raf);init();if(!reduce)draw();});
+})();
+
+// nav hide on scroll down
+let last=0;const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  nav.style.transform = (y>last && y>300) ? 'translateY(-100%)' : 'translateY(0)';
+  last=y;
+});
+</script>
+</body>
+</html>
